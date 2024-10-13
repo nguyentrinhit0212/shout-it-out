@@ -25,7 +25,7 @@ export default function Home() {
       setDisplayName(null);
     }
 
-    socket = io();
+    socket = io(process.env.NEXT_PUBLIC_SOCKET_URL || "http://localhost:3000");
 
     socket.on("receiveMessage", (msg: string, user: string) => {
       const newMessage = {
