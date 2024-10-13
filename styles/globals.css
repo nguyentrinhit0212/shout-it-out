@@ -94,6 +94,10 @@ body {
 /* Áp dụng màu chữ và font toàn cục */
 body {
   @apply bg-gray-100 text-gray-900; /* Màu nền sáng (xám nhạt) và màu chữ xám đậm */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Thiết lập chung cho container */

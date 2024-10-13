@@ -22,7 +22,7 @@ const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage }) => {
         maxLength={255}
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        placeholder="Nhập tin nhắn..."
+        placeholder="Whats on your mind?"
         className="w-full md:w-1/2 px-4 py-2 border border-gray-300 rounded-md"
       />
       <Button
@@ -30,7 +30,7 @@ const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage }) => {
         onClick={sendMessage}
         className="ml-4 px-4 py-2"
       >
-        Gửi
+        Shout
       </Button>
     </div>
   );

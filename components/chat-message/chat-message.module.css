@@ -15,8 +15,8 @@
 .message {
   position: absolute;
   white-space: nowrap;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 400;
   animation-name: floatMessage;
   animation-timing-function: linear;
   animation-iteration-count: 1;

@@ -15,12 +15,14 @@ let socket: Socket;
 
 export default function Home() {
   const [messages, setMessages] = useState<Message[]>([]);
-  const [displayName, setDisplayName] = useState<string | null>(null);
+  const [displayName, setDisplayName] = useState<string | null>("A stranger");
 
   useEffect(() => {
     const storedName = localStorage.getItem("displayName");
     if (storedName) {
       setDisplayName(storedName);
+    } else {
+      setDisplayName(null);
     }
 
     socket = io();
